@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello flex flex-column">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -32,9 +32,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
+@import "~variableStyle";
 h1, h2 {
   font-weight: normal;
+  padding-top: 20 * $rem;
 }
 
 ul {
